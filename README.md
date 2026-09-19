@@ -22,7 +22,7 @@ gripper_assem/
 │   └── urdf.rviz                        # RViz2 display configuration
 ├── launch/
 │   └── display.launch.py                # ROS 2 launch file
-├── meshes/                               # STL meshes, one per link (to be added)
+├── meshes/                               # STL meshes
 └── urdf/
     ├── gripper_assem.urdf               # robot description (skeleton)
     └── gripper_assem.csv                # SolidWorks export reference data (header only)
