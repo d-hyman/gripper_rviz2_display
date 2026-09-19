@@ -66,4 +66,5 @@ This starts:
 - `rviz2` — opens with the `config/urdf.rviz` configuration
 
 Drag any slider in the `joint_state_publisher_gui` window to move the corresponding joint and see the update reflected live in RViz2.
-![alt text](<Screenshot 2026-09-19 193744.png>)
+
+<img width="1916" height="1002" alt="Screenshot 2026-09-19 193826" src="https://github.com/user-attachments/assets/d8f6e9ff-580b-4491-9057-6f19ec3fa870" />
