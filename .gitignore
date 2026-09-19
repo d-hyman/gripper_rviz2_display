@@ -1,0 +1,10 @@
+build/
+install/
+log/
+
+export.log
+
+.vscode/
+.idea/
+*.swp
+.DS_Store

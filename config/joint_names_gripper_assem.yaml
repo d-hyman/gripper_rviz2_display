@@ -1,0 +1,4 @@
+# TODO: replace with the real joint names once the gripper URDF's <joint> tags are filled in.
+# List them in kinematic order, root-to-tip, same as robot_arm_assem_v5's
+# config/joint_names_robot_arm_assem_v5.yaml.
+controller_joint_names: ['', ]

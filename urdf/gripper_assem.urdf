@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="Gripper_assem_v7">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.17406 0.23534 -1.2597"
+        rpy="0 0 0" />
+      <mass
+        value="0.012162" />
+      <inertia
+        ixx="5.1838E-06"
+        ixy="1.0254E-07"
+        ixz="-2.032E-08"
+        iyy="5.5898E-06"
+        iyz="1.0626E-06"
+        izz="1.876E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="-0.172234 -1.258452 -0.237923"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://gripper_assem/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.84314 0.81569 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="-0.172234 -1.258452 -0.237923"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://gripper_assem/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="gear1">
+    <inertial>
+      <origin
+        xyz="0.006641 0.0005846 0.0081483"
+        rpy="0 0 0" />
+      <mass
+        value="0.0026667" />
+      <inertia
+        ixx="9.174E-08"
+        ixy="1.1053E-08"
+        ixz="7.8246E-09"
+        iyy="4.2757E-07"
+        iyz="-1.8973E-10"
+        izz="5.0874E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://gripper_assem/meshes/gear1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://gripper_assem/meshes/gear1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_gear1"
+    type="revolute">
+    <origin
+      xyz="-0.012944 -0.012152 -0.021133"
+      rpy="0 0 3.1006" />
+    <parent
+      link="base_link" />
+    <child
+      link="gear1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="1.5708"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link1_1">
+    <inertial>
+      <origin
+        xyz="0.015308 0.0042304 0.0022567"
+        rpy="0 0 0" />
+      <mass
+        value="0.0027768" />
+      <inertia
+        ixx="7.2931E-08"
+        ixy="-1.5987E-07"
+        ixz="2.84E-10"
+        iyy="7.3205E-07"
+        iyz="7.86E-11"
+        izz="7.9563E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://gripper_assem/meshes/link1_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://gripper_assem/meshes/link1_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint1_1"
+    type="fixed">
+    <origin
+      xyz="0.027269 0.010435 0.00627"
+      rpy="3.1416 0 1.8927" />
+    <parent
+      link="gear1" />
+    <child
+      link="link1_1" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      upper="1.5708"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="gear2">
+    <inertial>
+      <origin
+        xyz="0.0066685359286241 0.000586717145052207 -0.0081504036158945"
+        rpy="0 0 0" />
+      <mass
+        value="0.00265705477833533" />
+      <inertia
+        ixx="9.16929842520145E-08"
+        ixy="1.10957204200358E-08"
+        ixz="-7.89020297069511E-09"
+        iyy="4.27265411234701E-07"
+        iyz="1.86443538452265E-10"
+        izz="5.08406684755342E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://gripper_assem/meshes/gear2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://gripper_assem/meshes/gear2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_gear2"
+    type="revolute">
+    <origin
+      xyz="0.014956 -0.012152 -0.021133"
+      rpy="-3.1416 0 -0.0067659" />
+    <parent
+      link="base_link" />
+    <child
+      link="gear2" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="1.5708"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link1_2">
+    <inertial>
+      <origin
+        xyz="0.0153076680768047 0.00423035267893318 0.00224331795331148"
+        rpy="0 0 0" />
+      <mass
+        value="0.00277680561439334" />
+      <inertia
+        ixx="7.29309370654585E-08"
+        ixy="-1.5986908193294E-07"
+        ixz="-2.84065859834213E-10"
+        iyy="7.32050804715435E-07"
+        iyz="-7.83881830792768E-11"
+        izz="7.95628817466588E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://gripper_assem/meshes/link1_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://gripper_assem/meshes/link1_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint1_2"
+    type="fixed">
+    <origin
+      xyz="0.027736 0.010579 -0.00177"
+      rpy="-3.1416 0 1.8484" />
+    <parent
+      link="gear2" />
+    <child
+      link="link1_2" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      upper="1.5708"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link2_1">
+    <inertial>
+      <origin
+        xyz="-0.015651 -3.6751E-06 -0.0080091"
+        rpy="0 0 0" />
+      <mass
+        value="0.00089144" />
+      <inertia
+        ixx="4.9865E-09"
+        ixy="-5.0046E-11"
+        ixz="4.7108E-09"
+        iyy="1.244E-07"
+        iyz="1.4399E-11"
+        izz="1.2425E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://gripper_assem/meshes/link2_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://gripper_assem/meshes/link2_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint2_1"
+    type="revolute">
+    <origin
+      xyz="-0.005504 -0.031952 -0.020633"
+      rpy="3.1416 0 0.0037796" />
+    <parent
+      link="base_link" />
+    <child
+      link="link2_1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="1.5708"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link2_2">
+    <inertial>
+      <origin
+        xyz="0.016415 4.6962E-05 0.0080309"
+        rpy="0 0 0" />
+      <mass
+        value="0.00089144" />
+      <inertia
+        ixx="4.9865E-09"
+        ixy="-5.0046E-11"
+        ixz="4.7108E-09"
+        iyy="1.244E-07"
+        iyz="1.4399E-11"
+        izz="1.2425E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://gripper_assem/meshes/link2_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://gripper_assem/meshes/link2_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint2_2"
+    type="revolute">
+    <origin
+      xyz="0.007496 -0.031952 -0.020633"
+      rpy="0 0 -0.048905" />
+    <parent
+      link="base_link" />
+    <child
+      link="link2_2" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="1.5708"
+      effort="0"
+      velocity="0" />
+  </joint>
+</robot>
